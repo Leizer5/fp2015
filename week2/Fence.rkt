@@ -13,7 +13,7 @@
   (string-append "{"
                  (string-repeat "-" (round (+ 1 (log n))))
                  ">"
-                 (number->string n)
+                 (~a n)
                  "<"
                  (string-repeat "-" (round (+ 1 (log n))))
                  "}"))
