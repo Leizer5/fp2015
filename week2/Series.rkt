@@ -35,7 +35,8 @@
   (define (fibonacci-iter i result)
     (if (> i n) result
         (fibonacci-iter (+ i 1)(+ result (fibonacci i)))))
-  (iter 1 0))
+  (lucas-iter 1 0)
+  (fibonacci-iter 1 0))
 
 ;returns the difference between the nth member of the Lucas series adn the nth member of Fibonacci.
 (define (lucas-fib-diff n)
