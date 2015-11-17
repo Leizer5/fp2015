@@ -27,14 +27,14 @@
 
 ;return the sum of all members from the first to the nth one.
 (define (nth-lucas-sum n)
-  (define (iter i result)
+  (define (lucas-iter i result)
     (if (> i n) result
-        (iter (+ i 1)(+ result (lucas i)))))
+        (lucas-iter (+ i 1)(+ result (lucas i)))))
   (iter 1 0))
 (define (nth-fibonacci-sum n)
-  (define (iter i result)
+  (define (fibonacci-iter i result)
     (if (> i n) result
-        (iter (+ i 1)(+ result (fibonacci i)))))
+        (fibonacci-iter (+ i 1)(+ result (fibonacci i)))))
   (iter 1 0))
 
 ;returns the difference between the nth member of the Lucas series adn the nth member of Fibonacci.
