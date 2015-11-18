@@ -1,4 +1,5 @@
 #lang racket
+(provide string-repeat)
 ;This function should take a string and concatenate it with itself n times.
 
 (define (string-repeat str n)
