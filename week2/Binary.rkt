@@ -1,5 +1,5 @@
 #lang racket
-
+(provide to-binary-string string-reverse)
 ;Implement the generic string reverse function.
 (define (string-reverse str)
   (define (string-iter i result)
