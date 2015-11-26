@@ -1,5 +1,7 @@
 #lang racket
-(require "fp2015/week2/binary.rkt" "fp2015/palindrome?")
+(require "fp2015/week2/binary.rkt" "fp2015/palindrome?.rkt")
+
+;Implement a function, called (next-hack n) that takes an integer and returns the next hack number, that is bigger than n
 (define (number-of-ones n)
   (define (helper i result)
     (cond [(= (quotient i 10) 0) (+ result 1)]
