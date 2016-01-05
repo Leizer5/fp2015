@@ -1,5 +1,5 @@
 #lang racket
-
+(provide take-while drop-while)
 ; Намира сумата на всички числа в numbers
 (define (sum numbers)
   (define (helper n result)
